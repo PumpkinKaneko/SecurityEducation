@@ -1,0 +1,100 @@
+<%- include('./header') %>
+    <div id="">
+        <h1>サーバーの管理者画面</h1>
+    </div>
+    <h2>利用者から送られてきたデータ</h2>
+    <section>
+        <h3>Form認証</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>登録ユーザー名:</td>
+                    <td id="form-signup-username" class="important value"></td>
+                </tr>
+                <tr>
+                    <td>登録パスワード:</td>
+                    <td id="form-signup-password" class="important value"></td>
+                </tr>
+                <tr><td>登録パスワードハッシュ値:</td><td id="form-signup-password-hash-value" class="important value"></td></tr>
+                <tr><td>ログインユーザー名:</td><td id="form-login-username" class="important value"></td></tr>
+                <tr><td>ログインパスワード:</td><td id="form-login-password" class="important value"></td></tr>
+                <tr><td>ログインパスワードハッシュ値:</td><td id="form-login-password-hash-value" class="important value"></td></tr>
+                <tr><td>認証結果:</td><td id="form-auth-result" class="important value"></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>チャレンジアンドレスポンス認証</h3>
+        <table>
+            <tbody>
+                <tr><td>ユーザー名:</td><td id="candr-signup-username" class="important value"></td></tr>
+                <tr><td>パスワード:</td><td id="candr-signup-password" class="important value"></td></tr>
+                <tr><td>チャレンジ:</td><td id="candr-challenge" class="important value"></td></tr>
+                <tr><td>レスポンス:</td><td id="candr-response" class="important value"></td></tr>
+                <tr><td>ハッシュ値:</td><td id="candr-hash-value" class="important value"></td></tr>
+                <tr><td>認証結果:</td><td id="candr-auth-result" class="important value"></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>TOTP認証</h3>
+        <table>
+            <tbody>
+                <tr><td>QRコード情報:</td><td id="totp-secret" class="important value"></td></tr>
+                <tr><td>ユーザーコード:</td><td id="totp-auth-code" class="important value"></td></tr>
+                <tr><td>正しいコード:</td><td id="totp-true-code" class="important value"></td></tr>
+                <tr><td>認証結果:</td><td id="totp-auth-result" class="important value"></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>キーストローク認証</h3>
+        <table>
+            <tbody>
+                <tr><td>登録情報:</td><td id="key-stroke-signup-vector" class="important value"></td></tr>
+                <tr><td>入力された情報:</td><td id="key-stroke-login-vector" class="important value"></td></tr>
+                <tr><td>一致度:</td><td id="key-stroke-match" class="important value"></td></tr>
+                <tr><td>等価エラー率:</td><td id="key-stroke-eer" class="important value"></td></tr>
+                <tr>
+                    <td><input type="range" id="sld-key-stroke-eer" name="" min="0" max="100"></td>
+                    <td></td>
+                </tr>
+                <tr><td>認証結果:</td><td id="key-stroke-auth-result" class="important value"></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>デジタル署名</h3>
+        <table>
+            <tbody>
+                <tr><td>情報:</td><td id="digsig-data" class="important value"></td></tr>
+                <tr><td>署名:</td><td id="digsig-signature" class="important value"></td></tr>
+                <tr><td>検証結果:</td><td id="digsig-verify-result" class="important value"></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>FIDO認証</h3>
+        <table class="text-wrapper">
+            <tbody>
+                <tr><td class="key">登録ユーザー名:</td><td id="fido-signup-username" class="important value"></td></tr>
+                <tr><td class="key">登録時のチャレンジ:</td><td id="fido-signup-challenge" class="important value"></td></tr>
+                <tr><td class="key">登録時の署名:</td><td id="fido-signup-signature" class="important value"></td></tr>
+                <tr><td class="key">認証ユーザー名:</td><td id="fido-login-username" class="important value"></td></tr>
+                <tr><td class="key">認証時のチャレンジ:</td><td id="fido-login-challenge" class="important value"></td></tr>
+                <tr><td class="key">認証時の署名:</td><td id="fido-login-signature" class="important value"></td></tr>
+                <tr><td class="key">公開鍵:</td><td id="fido-public-key" class="important value"></td></tr>
+                <tr><td class="key">認証結果:</td><td id="fido-auth-result" class="important value"></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <script type="text/javascript" src="/static/js/reload.js"></script>
+    <script type="text/javascript" src="/static/js/eerSlider.js"></script>
+<%- include('./footer') %>

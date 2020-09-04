@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      window.jquery = window.$ = require('../js/jquery.min.js');
+    </script> 
+    <script type="text/javascript" src="../js/keyStrokeAuth.js"></script>
+    <title>Security Education Client</title>
+  </head>
+
+  <body>
+    <h2>キーストローク認証</h2>
+    <section>
+      <label>ID（登録用）: 
+        <input type="text" id="ipt-signup" maxlength="30">
+      </label>
+      <div>
+        <button id="btn-signup-reset">リセットする</button>
+        <button id="btn-signup-submit">登録する</button>
+      </div>
+    </section>
+
+    <section>
+      <label>ID（ログイン用）: 
+        <input type="text" id="ipt-login" maxlength="30">
+      </label>
+      <div>
+        <button id="btn-login-reset">リセットする</button>
+        <button id="btn-login-submit">ログインする</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="dsp-status" class="important"></div>
+    </section>
+
+    <div id="btn-return">
+      <a href="./index.html"><button>Menuに戻る</button></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      window.jquery = window.$ = require('../js/jquery.min.js');
+    </script> 
+    <script type="text/javascript" src="../js/fidoAuth.js"></script>
+    <title>Security Education Client</title>
+  </head>
+
+  <body>
+    <h3>FIDO認証</h3>
+    <section>
+      <div>登録用</div>
+      <div>
+        <label>ユーザー名: 
+          <input type="text" id="ipt-fido-signup-username" maxlength="30">
+        </label>
+      </div>
+      <div>
+        <button id="btn-fido-signup-username-submit">登録する</button>
+      </div>
+      <div>
+        <label>キーストローク認証で署名する: 
+          <input type="text" id="ipt-fido-signup-key-stroke" maxlength="30">
+        </label>
+      </div>
+      <div>
+        <button id="btn-fido-signup-key-stroke-reset">入力リセット</button>
+        <button id="btn-fido-signup-sign">生体情報で署名する</button>
+      </div>
+      <div>
+        <button id="btn-fido-signup-response-submit">公開鍵を登録する</button>
+      </div>
+    </section>
+
+    <section>
+      <div>ログイン用</div>
+      <div>
+        <label>ユーザー名: 
+          <input type="text" id="ipt-fido-login-username" maxlength="30">
+        </label>
+      </div>
+      <div>
+        <button id="btn-fido-login-username-submit">送信する</button>
+      </div>
+      <div>
+        <label>キーストローク認証で署名する: 
+          <input type="text" id="ipt-fido-login-key-stroke" maxlength="30">
+        </label>
+      </div>
+      <div>
+        <button id="btn-fido-login-key-stroke-reset">入力リセット</button>
+        <button id="btn-fido-login-sign">生体情報で署名する</button>
+      </div>
+      <div>
+        <button id="btn-fido-login-response-submit">認証する</button>
+      </div>
+    </section>
+    
+    <section>
+      <div id="dsp-status" class="important"></div>
+    </section>
+    
+    <div id="btn-return">
+      <a href="./index.html"><button>Menuに戻る</button></a>
+    </div>
+  </body>
+</html>

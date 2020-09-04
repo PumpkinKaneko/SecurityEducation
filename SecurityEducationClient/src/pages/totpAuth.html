@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      window.jquery = window.$ = require('../js/jquery.min.js');
+    </script> 
+    <script type="text/javascript" src="../js/totpAuth.js"></script>
+    <title>Security Education Client</title>
+  </head>
+
+  <body>
+    <h3>TOTP認証</h3>
+    <section>
+      <div>登録用</div>
+      <div>
+        <button id="btn-totp-show-qrcode">登録用画像を表示する</button>
+      </div>
+      <div id="img-qrcode">
+      </div>
+    </section>
+    <section>
+      <div>ログイン用</div>
+      <div>
+        <label>番号: 
+          <input type="text" id="ipt-totp-auth-code" maxlength="6">
+        </label>
+        <div>
+          <button id="btn-totp-auth-code-submit">番号を送る</button>
+        </div>
+      <div>
+    </section>
+    
+    <section>
+      <div id="dsp-status" class="important"></div>
+    </section>
+    
+    <div id="btn-return">
+      <a href="./index.html"><button>Menuに戻る</button></a>
+    </div>
+  </body>
+</html>

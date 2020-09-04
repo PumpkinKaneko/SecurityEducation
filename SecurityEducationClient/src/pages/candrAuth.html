@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      window.jquery = window.$ = require('../js/jquery.min.js');
+    </script> 
+    <script type="text/javascript" src="../js/candrAuth.js"></script>
+    <title>Security Education Client</title>
+  </head>
+
+  <body>
+    <h3>チャレンジ&レスポンス認証</h3>
+    <section>
+      <div>登録用</div>
+      <div>
+        <label>ユーザー名: 
+          <input type="text" id="ipt-candr-signup-username" maxlength="30">
+        </label>
+      </div>
+      <div>
+        <label>パスワード: 
+          <input type="password" id="ipt-candr-signup-password" maxlength="12">
+        </label>
+      </div>
+      <div>
+        <button id="btn-candr-signup-submit">登録する</button>
+      </div>
+    </section>
+    <section>
+      <div>ログイン用</div>
+      <div>
+        <label>ユーザー名: 
+          <input type="text" id="ipt-candr-login-username" maxlength="30">
+        </label>
+        <div>
+          <button id="btn-candr-username-submit">IDを送る</button>
+        </div>
+      <div>
+        <label>パスワード: 
+          <input type="password" id="ipt-candr-login-password" maxlength="12">
+        </label>
+        <div>
+          <button id="btn-candr-passowrd-submit">レスポンスを送る</button>
+        </div>
+      </div>
+    </section>
+    
+    <section>
+      <div id="dsp-status" class="important"></div>
+      <div class="text-wraper">チャレンジ：<span id="dsp-challenge"></span></div>
+      <div class="text-wraper">レスポンス：<span id="dsp-response"></span></div>
+    </section>
+    
+    <div id="btn-return">
+      <a href="./index.html"><button>Menuに戻る</button></a>
+    </div>
+  </body>
+</html>

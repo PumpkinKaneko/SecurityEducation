@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      window.jquery = window.$ = require('../js/jquery.min.js');
+    </script> 
+    <script type="text/javascript" src="../js/formAuth.js"></script>
+    <title>Security Education Client</title>
+  </head>
+
+  <body>
+    <h1>Form認証</h1>
+    <section>
+      <div>登録用</div>
+      <div>
+        <label>ユーザー名: 
+          <input type="text" id="ipt-form-signup-username" maxlength="32">
+        </label>
+      </div>
+      <div>
+        <label>パスワード: 
+          <input type="password" id="ipt-form-signup-password" maxlength="12">
+        </label>
+      </div>
+      <div>
+        <button id="btn-form-signup-submit">登録する</button>
+      </div>
+    </section>
+
+    <section>
+      <div>ログイン用</div>
+      <div>
+        <label>ユーザー名: 
+          <input type="text" id="ipt-form-login-username" maxlength="32">
+        </label>
+      </div>
+      <div>
+        <label>パスワード: 
+          <input type="password" id="ipt-form-login-password" maxlength="12">
+        </label>
+      </div>
+      <div>
+        <button id="btn-form-login-submit">ログインする</button>
+      </div>
+    </section>
+    
+    <section>
+      <div id="dsp-status" class="important"></div>
+    </section>
+
+    <div id="btn-return">
+      <a href="./index.html"><button>Menuに戻る</button></a>
+    </div>
+  </body>
+</html>

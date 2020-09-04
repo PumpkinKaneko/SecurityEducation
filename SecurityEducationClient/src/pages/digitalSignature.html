@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      window.jquery = window.$ = require('../js/jquery.min.js');
+    </script> 
+    <script type="text/javascript" src="../js/digitalSignature.js"></script>
+    <title>Security Education Client</title>
+  </head>
+
+  <body>
+    <h2>デジタル署名</h2>
+      <div>
+        <section>
+          <label>送りたい情報を入力してください: 
+            <input type="text" id="ipt-digital-signature-data" maxlength="30">
+          </label>
+          <div>
+            <button id="btn-digital-signature-sign">情報にデジタル署名を付与する</button>
+          </div>
+          <div>
+            <button id="btn-digital-signature-submit">デジタル署名付き情報を送る</button>
+          </div>
+        </section>
+
+        <section>
+          <div id="dsp-status" class="important"></div>
+        </section>
+      </div>
+    </div>
+
+    <div id="btn-return">
+      <a href="./index.html"><button>Menuに戻る</button></a>
+    </div>
+  </body>
+</html>

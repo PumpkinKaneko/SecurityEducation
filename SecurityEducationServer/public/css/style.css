@@ -1,0 +1,30 @@
+.important
+{
+  color: deeppink;
+}
+/*
+table td
+{
+  border-collapse: collapse;
+  border: 1px solid;
+}
+*/
+
+section
+{
+  margin: 30px 0 30px 0;
+}
+
+.text-wraper 
+{
+  word-break : break-all;
+}
+
+table {
+  table-layout: fixed;
+  width: 900px;
+}
+
+table td {
+  word-wrap: break-word;
+}
